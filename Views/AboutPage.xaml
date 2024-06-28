@@ -6,17 +6,86 @@
     <ContentPage.BindingContext>
         <viewModels:AboutViewModel />
     </ContentPage.BindingContext>
-    <VerticalStackLayout Spacing="10" Margin="10">
-        <HorizontalStackLayout Spacing="10">
-            <Image Source="dotnet_bot.png"
-                   SemanticProperties.Description="The dot net bot waving hello!"
-                   HeightRequest="64" />
-            <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" />
-            <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" />
-        </HorizontalStackLayout>
+    <VerticalStackLayout Spacing="20" Margin="10">
 
-        <Label Text="{Binding Message}" />
-        <Button Text="Learn more..." Command="{Binding ShowMoreInfoCommand}" />
+
+        <Grid>
+
+            <Image Source="fapp.png"
+                   Aspect="Fill"/>
+
+            <VerticalStackLayout Spacing="40">
+                <Image Source="altfondo.png"
+                   HeightRequest="300"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+
+                <HorizontalStackLayout Spacing="60">
+
+
+                    <Frame BackgroundColor="White"
+       
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="True"
+                   WidthRequest="70"
+                   HeightRequest="70"
+                  >
+
+
+                        <ImageButton Source="github.png"
+                     Clicked="github"
+                     WidthRequest="50"
+                     HeightRequest="50"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="Fill"/>
+
+
+
+                    </Frame>
+
+
+
+
+                    <Frame BackgroundColor="White"
+       
+                   CornerRadius="10"
+                   Padding="10"
+                   HasShadow="True"
+                   WidthRequest="70"
+                   HeightRequest="70"
+                  >
+                        <ImageButton Source="yutu.png"
+                        Clicked="yutu"
+                        WidthRequest="50"
+                        HeightRequest="50"/>
+
+                    </Frame>
+
+                    <Frame BackgroundColor="White"
+       
+                     CornerRadius="10"
+                     Padding="10"
+                     HasShadow="True"
+                     WidthRequest="70"
+                     HeightRequest="70">
+
+                        <ImageButton Source="steaam.png"
+                        Clicked="steam"
+                        WidthRequest="50"
+                        HeightRequest="50"/>
+
+                    </Frame>
+
+
+                </HorizontalStackLayout>
+
+
+            </VerticalStackLayout>
+        </Grid>
+
+
     </VerticalStackLayout>
 
 </ContentPage>

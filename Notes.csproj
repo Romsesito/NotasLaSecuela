@@ -57,6 +57,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\ALTFONDO.png" />
+	  <None Remove="Resources\Images\fapp.png" />
+	  <None Remove="Resources\Images\fondooo.png" />
+	  <None Remove="Resources\Images\github.png" />
+	  <None Remove="Resources\Images\steaam.png" />
+	  <None Remove="Resources\Images\yutu.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
