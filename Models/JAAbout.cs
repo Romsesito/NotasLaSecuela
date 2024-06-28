@@ -1,6 +1,6 @@
 ﻿namespace Notes.Models;
 
-internal class About
+internal class JAAbout
 {
     public string Title => AppInfo.Name;
     public string Version => AppInfo.VersionString;

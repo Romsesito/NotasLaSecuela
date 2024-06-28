@@ -4,7 +4,7 @@
              xmlns:viewModels="clr-namespace:Notes.ViewModels"
              x:Class="Notes.Views.AboutPage">
     <ContentPage.BindingContext>
-        <viewModels:AboutViewModel />
+        <viewModels:JAAboutViewModel />
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="20" Margin="10">
 
@@ -84,8 +84,6 @@
 
             </VerticalStackLayout>
         </Grid>
-
-
     </VerticalStackLayout>
 
 </ContentPage>

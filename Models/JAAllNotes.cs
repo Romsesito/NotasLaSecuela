@@ -2,11 +2,11 @@
 
 namespace Notes.Models;
 
-internal class AllNotes
+internal class JAAllNotes
 {
-    public ObservableCollection<Note> Notes { get; set; } = new ObservableCollection<Note>();
+    public ObservableCollection<JANote> Notes { get; set; } = new ObservableCollection<JANote>();
 
-    public AllNotes() =>
+    public JAAllNotes() =>
         LoadNotes();
 
     public void LoadNotes()
@@ -17,13 +17,13 @@ internal class AllNotes
         string appDataPath = FileSystem.AppDataDirectory;
 
         // Use Linq extensions to load the *.notes.txt files.
-        IEnumerable<Note> notes = Directory
+        IEnumerable<JANote> notes = Directory
 
                                     // Select the file names from the directory
                                     .EnumerateFiles(appDataPath, "*.notes.txt")
 
                                     // Each file name is used to create a new Note
-                                    .Select(filename => new Note()
+                                    .Select(filename => new JANote()
                                     {
                                         Filename = filename,
                                         Text = File.ReadAllText(filename),
@@ -34,7 +34,7 @@ internal class AllNotes
                                     .OrderBy(note => note.Date);
 
         // Add each note into the ObservableCollection
-        foreach (Note note in notes)
+        foreach (JANote note in notes)
             Notes.Add(note);
     }
 }

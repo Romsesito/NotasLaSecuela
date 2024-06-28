@@ -6,7 +6,7 @@
             NavigatedTo="ContentPage_NavigatedTo">
     
     <ContentPage.BindingContext>
-        <viewModels:NotesViewModel />
+        <viewModels:JANotesViewModel />
     </ContentPage.BindingContext>
 
 
